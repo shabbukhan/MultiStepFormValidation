@@ -1,0 +1,128 @@
+body {
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+.tab {
+    margin-bottom: 20px;
+    min-height: 300px;
+    background: #dedede;
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+legend {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+abbr[title] {
+    text-decoration: none;
+    color: red
+}
+
+select,
+input[type='text'],
+input[type='password'] {
+    width: 50%;
+    height: 30px;
+    box-shadow: none;
+}
+
+label[for='username'],
+label[for='password'],
+label[for='confirmpassword'],
+label[for='experience'] {
+    width: 25%;
+    display: inline-block;
+}
+
+.tab span {
+    height: 20px;
+    display: block;
+    margin: 10px 0 10px 26%;
+}
+
+.show-error {
+    color: red;
+    margin-left: 26%;
+}
+
+.hide-error {
+    visibility: hidden;
+}
+
+#success {
+    color: green;
+    font-size: 150%;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+button {
+    background: green;
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 100%;
+    }
+    form {
+        width: 100%;
+    }
+    .tab {
+        margin-bottom: 0;
+    }
+    label[for='username'],
+    label[for='password'],
+    label[for='confirmpassword'],
+    label[for='experience'] {
+        width: 100%;
+        display: inline-block;
+    }
+    select,
+    input[type='text'],
+    input[type='password'] {
+        width: 100%;
+    }
+    legend {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .tab span {
+        margin-left: 0;
+    }
+}
